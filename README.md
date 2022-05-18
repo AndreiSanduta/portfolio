@@ -29,7 +29,7 @@
 #
 # **Typografy and collor scheme**
 ### On this project the Fonts used should be the following ones
-* #### Satisfy + Halant + Montserrat [Font Family](<link href="https://fonts.googleapis.com/css?family=Halant|Montserrat:700|Satisfy" rel="stylesheet">)
+* #### 
 * #### Collor scheme (#000000  #FFFFFF #D9E3DA #A7BEA9)
 #
 # **How the website should look like:**
