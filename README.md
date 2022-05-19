@@ -52,5 +52,5 @@
 ![submition message](https://user-images.githubusercontent.com/101544012/169141227-079145da-388c-45f7-9d9d-def8b1e7860d.png)
 ## This page will oppen when an other page when the form will be succesfuly submited by the custumer.
 
-## The wire frame it's just a scketch of the main website. Some pictures, font family and colors may change to guive to the website 
+## The wire frame it's just a scketch of the main website. Some pictures, font family and colors may change to give to the website 
 ## a harmonized look and a better design apeal.
