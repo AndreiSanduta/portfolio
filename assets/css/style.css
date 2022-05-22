@@ -1,10 +1,89 @@
-#logo {
-    height: 250px;
-    width: 250px;
+/*Add font family from google here*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Oswald:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+/*Header here*/
+
+#header {
+  background-color: #DBFAFB;
+  width: 100%;  
 }
 
-#main-image {
-    height: 850px;
-    width: 494px;
-    
+
+#body {
+    font-family: Josefin Sans , sans-serif;
 }
+
+/*Menu here*/
+
+
+#menu {
+    list-style-type: none;
+    float: right;
+    letter-spacing: 3.5px;
+    font-family: Josefin Sans , sans-serif;
+    margin-right: 35px;
+    position: relative;
+    bottom: 100px;
+}
+
+#menu a {
+    color: #b892a7;
+    text-decoration: none;
+    font-size: 200%;
+    display: inline;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #b892a7;
+}
+
+#menu li {
+    float: right;
+    margin-right: 40px;
+}
+
+#logo {
+   width: 200px;
+   height: 200px;
+}
+
+#logo #menu {
+    line-height: 250px;
+}
+/*main section*/
+
+#main-image {
+    width: 1500px;
+    height: 1000px;
+    
+    
+    
+   
+}
+
+.quote {
+    font-family: Josefin Sans , sans-serif;
+    text-align: center;
+    font-size: 400%;
+    color: #AA8EBE;
+    position: relative;
+    top: 220px;
+}
+
+/*paht here*/
+
+.path-title {
+    font-family: Josefin Sans , sans-serif;
+    margin-left: 100px;
+    font-size: 200%;
+}
+
+
+
+
+/*Media query*/
