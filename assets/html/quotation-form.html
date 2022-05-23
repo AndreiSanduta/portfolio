@@ -12,6 +12,32 @@
             background-image: repeating-linear-gradient(to left, rgb(255, 228, 252), rgb(118, 247, 255))
 
         }
+
+        .box {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            border-radius:20px;
+            width: 25%;
+        }
+
+        fieldset {
+            border: 2px solid #7900f4;
+            border-radius: 10px;
+        }
+
+        legend {
+            border: 2px solid #7900f4;
+            padding: 12px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .inputbox {
+            position: relative;
+        }
     </style>
     
 </head>
@@ -34,7 +60,7 @@
     <div class="box">
         <form action="">
             <fieldset>
-                <legend><b>your contact information</b></legend>
+                <legend><b>Your contact information</b></legend>
                 <br>
                 <div class="inputbox">
                     <input type="text" name="full-name" id="fname" class="fname" required>
@@ -78,7 +104,7 @@
                                 <div>
                                 <input type="text" name="adress" id="adress" class="adress" required>
                                 <label for="name"><b>Adress</b></label>
-                                <br>
+                                <br><br>
                                 <input type="submit" name="submit" id="submit">
                             </div>
                             </div>
