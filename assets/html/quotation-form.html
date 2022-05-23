@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Quotation Form</title>
+    <style>
+        body {
+            font-family: J Josefin Sans , sans-serif;
+            background-image: repeating-linear-gradient(to left, rgb(255, 228, 252), rgb(118, 247, 255))
+
+        }
+    </style>
+    
 </head>
 <body>
     <header id="header">
@@ -23,6 +31,60 @@
             </ul>
         </nav>
     </header>
-    
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>your contact information</b></legend>
+                <br>
+                <div class="inputbox">
+                    <input type="text" name="full-name" id="fname" class="fname" required>
+                    <label for="name">full name</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="email" name="email" id="email" class="email" required>
+                    <label for="name">Email</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="tel" name="Phone" id="Phone" class="Phone" required>
+                    <label for="name">Phone</label>
+                </div>
+                <br><br>
+                <p>I want to renvate:</p>
+                <br>
+                <div>
+                <input type="radio" id="living" name="living" value="living" required>
+                <label for="living room">Living Room</label>
+                <input type="radio" id="balcony" name="balcony" value="balcony" required>
+                <label for="balcony">Balcony</label>
+                <input type="radio" id="bedroom" name="bedroom" value="bedroom" required>
+                <label for="bedroom">Bedroom</label>
+                <input type="radio" id="kitchen" name="kitchen" value="kitchen" required>
+                <label for="kitchen">Kitchen</label>
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <input type="date" name="start" id="start" class="start" required>
+                    <label for="name"><b>I want to start the project on:</b></label>
+                    </div>
+                    <br><br>
+                    <div class="inputbox">
+                        <div>   
+                        <input type="text" name="city" id="city" class="city" required>
+                            <label for="name"><b>City</b></label><div class="inputbox">
+                            </div>
+                                <br><br>
+                                <div>
+                                <input type="text" name="adress" id="adress" class="adress" required>
+                                <label for="name"><b>Adress</b></label>
+                                <br>
+                                <input type="submit" name="submit" id="submit">
+                            </div>
+                            </div>
+                            <br><br>
+            </fieldset>
+        </form>
+    </div>   
 </body>
 </html>

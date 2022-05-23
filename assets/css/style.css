@@ -137,7 +137,11 @@ body {
     font-size: 200%;
 }
 
+/*quotation-form*/
 
+#quotation-form {
+    background-image: -o-linear-gradient(to right, rgb(148, 120, 192), rgb(9, 242, 252));
+}
 
 
 /*Media query*/
