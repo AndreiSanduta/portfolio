@@ -45,7 +45,7 @@
             border-bottom: 2px solid whitesmoke;   
         }
 
-        #submit {
+        #button {
             background-image: repeating-linear-gradient(to right, rgb(255, 228, 252), rgb(118, 247, 255));
             border: 5px solid white;
             width: 100%;
@@ -53,10 +53,16 @@
             font-size: 20px;
             cursor: pointer;
             border-radius: 20px;
+            
         }
 
-        #submit:hover {
+        #button:hover {
             background-image: repeating-linear-gradient(to right, rgb(247, 161, 237), rgb(59, 234, 247));
+        }
+
+        .submit {
+            text-decoration: none;
+            color: black;
         }
 
       
@@ -132,7 +138,9 @@
                                 <input type="text" name="adress" id="adress" class="fieldinput" required>
                                 
                                 <br><br>
-                                <input type="submit" name="submit" id="submit">
+                                <button id="button">
+                                    <a class="submit" href="form-submited.html" target="_blank">submit</a>
+                                    </button>
                             </div>
                             </div>
                             <br><br>
