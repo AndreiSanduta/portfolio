@@ -9,7 +9,7 @@
 /*Header here*/
 
 #header {
-  background-color: #DBFAFB;
+    background-image: repeating-linear-gradient(to left, rgb(244, 200, 238), rgb(193, 251, 255));
   width: 100%;  
 }
 
@@ -33,15 +33,18 @@ body {
 }
 
 #menu a {
-    color: #b892a7;
+    color: #5b1a3f;
     text-decoration: none;
     font-size: 200%;
     display: inline;
 }
 
+
+
 #menu a:hover {
     border-bottom: 1px solid #b892a7;
 }
+
 
 #menu li {
     float: right;
@@ -142,10 +145,26 @@ body {
     font-size: 200%;
 }
 
+.map {
+    border: 5px solid red;
+    position: relative;
+
+}
 /*quotation-form*/
 
 #quotation-form {
     background-image: -o-linear-gradient(to right, rgb(148, 120, 192), rgb(9, 242, 252));
+}
+
+
+.textabout {
+    position: absolute;
+    border: none;
+    height: 500px;
+    width: 1100px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 
