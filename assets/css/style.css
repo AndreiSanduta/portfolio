@@ -139,10 +139,22 @@ body {
 
 /*paht here*/
 
-.path-title {
-    font-family: Josefin Sans , sans-serif;
-    margin-left: 100px;
-    font-size: 200%;
+.path-title h1 {
+text-align: center ;
+font-size: 60px;
+font-family: Josefin Sans , sans-serif;
+}
+
+.path {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pathimg {
+    padding:0 50px 50px;
 }
 
 .map {
