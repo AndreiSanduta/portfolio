@@ -6,78 +6,102 @@
     padding: 0;
     border: none;
 }
+
 /*Header here*/
 
-#header {
-    background-image: repeating-linear-gradient(to left, rgb(244, 200, 238), rgb(193, 251, 255));
-  width: 100%;  
+.header {
+    background-image: none;
+    width: 100%;
+    height: auto;
 }
 
-
-body {
-    font-family: Josefin Sans , sans-serif;
+.body {
+    font-family: Josefin Sans, sans-serif;
     font-weight: 400;
 }
 
 /*Menu here*/
 
-
-#menu {
-    list-style-type: none;
-    float: right;
-    letter-spacing: 3.5px;
-    font-family: Josefin Sans , sans-serif;
-    margin-right: 35px;
-    position: relative;
-    bottom: 100px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00957c83;
+    color: white;
 }
 
-#menu a {
-    color: #5b1a3f;
+.brand-title {
+    width: 30%;
+    height: 30%;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
     text-decoration: none;
-    font-size: 200%;
-    display: inline;
+    color: white;
+    padding: 3rem;
+    display: block;
 }
 
-
-
-#menu a:hover {
-    border-bottom: 1px solid #b892a7;
+.navbar-links li:hover {
+    border: none;
+    border-bottom: 1px solid #09f4fc;
+    cursor: pointer;
 }
 
+@media screen and (max-width: 375px) {
+    .navbar {
+        width: 375px;
+        height: auto;
+    }
 
-#menu li {
-    float: right;
-    margin-right: 40px;
-}
+    .navbar-links {
+        width: auto;
+        padding: none;
+    }
+}   
 
-#logo {
-   width: 200px;
-   height: 200px;
-}
 
-#logo #menu {
-    line-height: 250px;
-}
 /*main section*/
-
-#main-image {
-    width: 1500px;
-    height: 1000px;
-    overflow: hidden;
-    
-}
-
-.quote {
-    font-family: Josefin Sans , sans-serif;
-    text-align: center;
+.wellcome {
+    font-family: Josefin Sans, sans-serif;
     font-size: 400%;
     color: #AA8EBE;
     position: relative;
-    top: 300px;
+    justify-content: center;
+    padding: 1%
 }
 
+.main-image {
+    padding: 1%;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+    .wellcome {
+        font-size: 100%;
+        justify-content: center;
+    }
+
+    .main-image {
+        padding: 1%;
+        width: 68%;
+        height: 10%;
+    }
+}
 /*buton here*/
+
 .qtform {
     text-decoration: none;
     color: black;
@@ -92,11 +116,10 @@ body {
 
 .btn {
     display: flex;
-    
+
 }
 
 .btn {
-    
     padding: 50px 110px;
     font-size: 3rem;
     position: relative;
@@ -106,11 +129,11 @@ body {
     border-radius: 30px;
     transition: transform 0.5s ease;
     text-decoration: none;
-    font-family: Josefin Sans , sans-serif;
-
+    font-family: Josefin Sans, sans-serif;
 }
 
-.btn::after, .btn::before {
+.btn::after,
+.btn::before {
     content: "";
     position: absolute;
     opacity: 0.3;
@@ -126,24 +149,24 @@ body {
 }
 
 .btn:hover {
-    transform:translate(-12px, -12px) 
+    transform: translate(-12px, -12px)
 }
 
 .btn:hover::after {
-    transform:translate (6px, 6px)
+    transform: translate (6px, 6px)
 }
 
 .btn:hover::before {
-    transform:translate (12px, 12px)
+    transform: translate (12px, 12px)
 }
 
 /*paht here*/
 
 .path-title h1 {
-align-items: center;
-text-align: center ;
-font-size: 60px;
-font-family: Josefin Sans , sans-serif;
+    align-items: center;
+    text-align: center;
+    font-size: 200%;
+    font-family: Josefin Sans, sans-serif;
 }
 
 .path {
@@ -155,58 +178,68 @@ font-family: Josefin Sans , sans-serif;
 }
 
 .pathimg {
-    padding:0 50px 50px;
+    width: 60%;
+    height: auto;
 }
 
+@media screen and (max-width: 500px) {
+    .path-title h1 {
+        font-size: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .path {
+        display:inline-block;
+    }
+
+    .pathimg {
+        padding: 1%;
+        width: 30%;
+        height: auto;
+    }
+}
 
 /*quotation-form*/
 
 #quotation-form {
-    background-image: -o-linear-gradient(to right, rgb(148, 120, 192), rgb(9, 242, 252));
+    background-image: -o-linear-gradient(to right, #9478c0, #09f4fc);
 }
 
 .box {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    border-radius:20px;
-    width: 25%;
+    display: flexbox;
+    margin: auto;
+    width: 40%;
+    padding: 1%;
 }
 
-fieldset {
+.legend {
     border: none;
-    border-radius: 20px;
-}
-
-legend {
-    border: none;
-    padding: 15px;
+    padding: 5%;
     text-align: center;
-    
 }
 
 .inputbox {
     position: relative;
-    margin: 10px 0 20px 0;
+    margin: 3% 0 4%;
 }
 
 .fieldinput {
     background: none;
     border: none;
-    border-bottom: 2px solid whitesmoke;   
+    border-bottom: 1px solid #9478c0;
+    border-right: 100%;
 }
 
 #button {
     background-image: repeating-linear-gradient(to right, rgb(255, 228, 252), rgb(118, 247, 255));
     border: 5px solid white;
     width: 100%;
-    padding: 20px;
-    font-size: 20px;
+    padding: 2%;
+    font-size: 100%;
     cursor: pointer;
-    border-radius: 20px;
-    
+    border-radius: 15%;
+
 }
 
 #button:hover {
@@ -216,80 +249,88 @@ legend {
 .submit {
     text-decoration: none;
     color: black;
-}
-
-.message {
-    font-size: 30px;
-    color: green;
-    position: absolute;
-    animation: buttons .3s linear;
-    display: none;
-    
+    text-transform: capitalize;
 }
 
 /*About us*/
+.description {
+    justify-content: center;
+    text-align: justify;
+    padding: 10%;
+    margin: inherit;
+}
 
+.description h1 {
+    text-align: center;
+    padding: 5%;
+}
 
 /*projects*/
+.projectimg {
+    font-family: Josefin Sans, sans-serif;
+    font-size: 400%;
+    color: #AA8EBE;
+    position: relative;
+    justify-content: center;
+    padding: 3%
+}
 
-.projecttitle h1 {
-    align-items: center;
-    text-align: center ;
-    font-size: 60px;
-    font-family: Josefin Sans , sans-serif;
-    }
-    
-    .project {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .projectimg {
-        
-        width: 400px;
-        height: 400px;
-    }
+.photo_gallery {
+    padding-left: 3%;
+    clear: both;
+    line-height: 2;
+    column-count: 2;
+    column-gap: 2%;
+}
 
+.photo_gallery>img {
+    width: 100%;
+
+}
 
 /*Media query*/
 
 
 /*contact us*/
-.contattitle {
-text-align: center;
-justify-content: center;
-font-size: 30px;
-font-family: Josefin Sans , sans-serif;
+.map {
+    margin: auto;
+    width: 50%;
+    padding: 1%;
 }
 
-.adres {
-width: 300px;
-height: 200px;
-margin: 100px auto;
-background: none;
-}
-
-
-.adres h1 {
-margin: 0;
-padding: 0;
-font-family: Josefin Sans , sans-serif;
-font-size: 2em;
-text-transform: capitalize;
-text-align: center;
-top: 50%;
-transform: translateY(-50%);
-}
-
-.location {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
+.map_text {
     justify-content: center;
+    text-align: center;
+    padding: 3%;
+    margin: inherit;
+}
+
+.contacts {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 3%;
+    margin: 5%;
+}
+
+.contacts h2 {
+    padding: 2%;
+    color: #073b3d;
+}
+
+.submited {
+    margin: auto;
+    width: 50%;
+    padding: 15%;
+    text-align: center;
+    size: 200%;
+    text-transform: capitalize bold;
+    letter-spacing: 5%;
+    color: #073b3d;
+}
+
+.submited h1 {
+    size: 300%;
 }
 
 /*footer*/
@@ -297,22 +338,32 @@ transform: translateY(-50%);
 footer {
     height: 170px;
 }
+
 .network-links {
     text-align: center;
 }
 
-.network-links > li {
- display: inline;
+.network-links>li {
+    display: inline;
 }
 
 .network-links i {
     font-size: 50px;
     margin: 2%;
     padding: 3%;
-    color:rgb(242, 64, 222)
+    color: rgb(242, 64, 222)
 }
 
 .network-links li:hover {
     transition: .8s;
     opacity: .3;
+}
+
+@media screen and {
+    min-width: 320px;
+
+    .body {
+        text-align: center;
+        font-size: large;
+    }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,102 +8,92 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Quotation Form</title>
 </head>
+
 <body>
-    <section>
-        <header id="header">
-            <a href="index.html"><img id="logo" src="./assets/image/logo.png" alt="logo"></p></a>
+    <header class="header">
+        <img class="logo" src="./assets/image/logo.png" alt="logo">
         <nav class="nav">
-            <ul id="menu">
-                <li>
-                    <a href="contact-us.html"><b>Contact Us</b></a>
-                </li>  
-                <li>
-                    <a href="about-us.html"><b>About Us</b></a>
-                </li>
-                <li>
-                    <a href="projects.html"><b>Projects</b></a>
-                </li>        
+            <ul class="menu">
+                <li><a href="contact-us.html"><b>Contact Us</b></a></li>
+                <li><a href="about-us.html"><b>About Us</b></a></li>
+                <li><a href="projects.html"><b>Projects</b></a></li>
+                <li><a href="index.html"><b>Home</b></a></li>
             </ul>
         </nav>
     </header>
-</section>  
-            <!--Form here-->
+    </section>
+    <!--Form here-->
     <div class="box">
-        <form action="">
+        <form action="submited.html" method="get">
             <fieldset>
-                <legend><b>Your contact information</b></legend>
+                <legend class="legend"><b>Your contact information</b></legend>
                 <br>
                 <div class="inputbox">
                     <label for="name">Full name</label>
                     <input type="text" name="full-name" id="fname" class="fieldinput" required>
-                    
                 </div>
                 <br><br>
                 <div class="inputbox">
                     <label for="name">Email</label>
                     <input type="email" name="email" id="email" class="fieldinput" required>
-                    
                 </div>
                 <br><br>
                 <div class="inputbox">
                     <label for="name">Phone</label>
                     <input type="tel" name="Phone" id="Phone" class="fieldinput" required>
-                    
                 </div>
                 <br><br>
                 <p>Desired Style:</p>
                 <br>
                 <div>
                     <label for="living room">Classic</label>
-                <input type="radio" id="living" name="living" value="living">
-                <label for="balcony">Nordic</label>
-                <input type="radio" id="balcony" name="balcony" value="balcony">
-                <label for="bedroom">Rustic</label>
-                <input type="radio" id="bedroom" name="bedroom" value="bedroom">
-                <label for="kitchen">Modern</label>
-                <input type="radio" id="kitchen" name="kitchen" value="kitchen">
+                    <input type="radio" id="living" name="living" value="living">
+                    <label for="balcony">Nordic</label>
+                    <input type="radio" id="balcony" name="balcony" value="balcony">
+                    <label for="bedroom">Rustic</label>
+                    <input type="radio" id="bedroom" name="bedroom" value="bedroom">
+                    <label for="kitchen">Modern</label>
+                    <input type="radio" id="kitchen" name="kitchen" value="kitchen">
                 </div>
                 <br><br>
                 <div class="inputbox">
                     <label for="name"><b>I want to start the project on:</b></label>
                     <input type="date" name="start" id="start" class="start" required>
-                    
+                </div>
+                <br><br>
+                <div class="inputbox">
+                    <div>
+                        <label for="name">City</label>
+                        <input type="text" name="adress" id="adress" class="fieldinput" required>
                     </div>
                     <br><br>
-                    <div class="inputbox">
-                        <div>   
-                            <label for="name">City</label>
-                            <input type="text" name="adress" id="adress" class="fieldinput" required>
-                            </div>
-                                <br><br>
-                                <div>
-                                <label for="name">Adress</label>
-                                <input type="text" name="adress" id="adress" class="fieldinput" required>
-                                
-                                <br><br>
-                                <button id="button">
-                                    <a class="submit" href="form-submited.html" target="_blank">submit</a>
-                                    </button>
-                                    <div class="message" id="message">Successfully Submited. We'll get in touch soon!</div>
-                            </div>
-                            </div>
-                            <br><br>
+                    <div>
+                        <label for="name">Adress</label>
+                        <input type="text" name="adress" id="adress" class="fieldinput" required>
+                        <br><br>
+                        <button id="button">
+                        <a class="submit" href="form-submited.html" target="_blank">Submit</a>
+                        </button>
+                    </div>
+                </div>
+                <br><br>
             </fieldset>
         </form>
     </div> <!-- End Form-->
     <footer>
         <!--add social media links-->
-        <ul class="network-links"> 
+        <ul class="network-links">
             <li><a href="https://facebook.com" target="_blank" rel="noopner" aria-label="visit us on facebook">
-                <i class="fa-brands fa-facebook-square"></i></a></li>
+                    <i class="fa-brands fa-facebook-square"></i></a></li>
             <li><a href="https://instagram.com" target="_blank" rel="noopner" aria-label="visit us on instagram">
-                <i class="fa-brands fa-instagram-square"></i></a></li>
+                    <i class="fa-brands fa-instagram-square"></i></a></li>
             <li><a href="https://twitter.com" target="_blank" rel="noopner" aria-label="visit us on twitter">
-                <i class="fa-brands fa-twitter-square"></i></a></li>
+                    <i class="fa-brands fa-twitter-square"></i></a></li>
             <li><a href="https://pinterest.com" target="_blank" rel="noopner" aria-label="visit us on pinterest">
-                <i class="fa-brands fa-pinterest-square"></i></a></li>
+                    <i class="fa-brands fa-pinterest-square"></i></a></li>
         </ul>
     </footer>
     <script src="https://kit.fontawesome.com/3f6f83e2a4.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
