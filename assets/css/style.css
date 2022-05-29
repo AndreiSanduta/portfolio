@@ -359,8 +359,7 @@ footer {
     opacity: .3;
 }
 
-@media screen and {
-    min-width: 320px;
+@media screen and (min-width: 320px) {
 
     .body {
         text-align: center;
