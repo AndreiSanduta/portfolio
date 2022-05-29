@@ -12,7 +12,7 @@
 .header {
     background-image: none;
     width: 100%;
-    height: auto;
+    height: 10%;
 }
 
 .body {
@@ -23,16 +23,19 @@
 /*Menu here*/
 
 .navbar {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
-    background-color: #00957c83;
+    background-image: repeating-linear-gradient(to left, rgb(234, 166, 226), rgb(174, 250, 255));
     color: white;
 }
 
 .brand-title {
-    width: 30%;
-    height: 30%;
+    display: flex;
+}
+
+.brand-title img {
+    width: 60%;
 }
 
 .navbar-links ul {
@@ -47,26 +50,55 @@
 
 .navbar-links li a {
     text-decoration: none;
-    color: white;
-    padding: 3rem;
+    color: #9478c0;
+    padding: 1rem;
     display: block;
+    font-size: 145%;
 }
 
 .navbar-links li:hover {
     border: none;
-    border-bottom: 1px solid #09f4fc;
+    border-bottom: 3px solid #9478c0;
+    border-top: 3px solid #9478c0;
+    cursor: pointer;
+}
+
+.brand-title img:hover {
     cursor: pointer;
 }
 
 @media screen and (max-width: 375px) {
     .navbar {
-        width: 375px;
-        height: auto;
+        display: flex;
+        width: 100%;
     }
 
     .navbar-links {
         width: auto;
         padding: none;
+    }
+
+    .brand-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .brand-title img {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20%;
+    }
+
+    .navbar-links li a {
+    text-decoration: none;
+    color: #532a96;
+    padding: 1.1rem;
+    display: block;
+    font-size: 100%;
     }
 }   
 
@@ -78,11 +110,12 @@
     color: #AA8EBE;
     position: relative;
     justify-content: center;
+    text-align: center;
     padding: 1%
 }
 
 .main-image {
-    padding: 1%;
+    padding: none;
     width: 100%;
     height: 10%;
     overflow: hidden;
@@ -90,25 +123,27 @@
 
 @media screen and (max-width: 500px) {
     .wellcome {
-        font-size: 100%;
+        font-size: 250%;
         justify-content: center;
+        text-align: center;
     }
 
     .main-image {
-        padding: 1%;
-        width: 68%;
-        height: 10%;
+        width: 100%;
+        height: 100%;
     }
 }
 /*buton here*/
 
 .qtform {
     text-decoration: none;
-    color: black;
+    color: #073b3d;
+    text-transform: capitalize;
+    text-align: center;
+    size: 1;
 }
 
 .container {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,10 +155,10 @@
 }
 
 .btn {
-    padding: 50px 110px;
-    font-size: 3rem;
+    padding: 20px 40px;
+    font-size: 30px;
     position: relative;
-    margin: 50px;
+    margin: 5px;
     background-image: repeating-linear-gradient(to left, rgb(255, 228, 252), rgb(118, 247, 255));
     color: black;
     border-radius: 30px;
@@ -160,43 +195,60 @@
     transform: translate (12px, 12px)
 }
 
+@media screen and (max-width: 500px) {
+.container .btn {
+    padding: auto;
+    width: 300px;
+    height: 100px;
+}
+
+.qtform {
+    justify-items: center;
+    text-align: center;
+    size: 10px;
+    color: inherit;
+}
+
+}
+
 /*paht here*/
 
 .path-title h1 {
     align-items: center;
     text-align: center;
-    font-size: 200%;
+    font-size: 500%;
     font-family: Josefin Sans, sans-serif;
+    color: #AA8EBE;
 }
 
-.path {
+.path-image {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
+    justify-items: center;
+    padding-left: 15%;
 }
 
-.pathimg {
-    width: 60%;
-    height: auto;
+.path-image > .path-image-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
 }
 
 @media screen and (max-width: 500px) {
     .path-title h1 {
-        font-size: 100%;
+        font-size: 300%;
         text-align: center;
         justify-content: center;
+        color: #AA8EBE;
     }
 
-    .path {
-        display:inline-block;
-    }
-
-    .pathimg {
-        padding: 1%;
-        width: 30%;
-        height: auto;
+    .path-image img {
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        padding: 10%;
     }
 }
 
