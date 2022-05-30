@@ -291,7 +291,7 @@
 }
 
 .text-description {
-    font-family: Josefin Sans, sans-serif;;
+    font-family: Josefin Sans, sans-serif;
     text-align: justify;
     padding: 3%;
     color: #5b0dd8;
@@ -320,8 +320,9 @@
 }
 
 .map {
+    display: flex;
     margin: auto;
-    width: 50%;
+    width: 60%;
     padding: 1%;
 }
 
@@ -330,6 +331,8 @@
     text-align: center;
     padding: 3%;
     margin: inherit;
+    font-family: Josefin Sans, sans-serif;
+    color: #5b0dd8;
 }
 
 .contacts {
@@ -338,12 +341,26 @@
     text-align: center;
     padding: 3%;
     margin: 5%;
+    font-family: Josefin Sans, sans-serif;
+    color: #5b0dd8;
 }
 
 .contacts h2 {
     padding: 2%;
-    color: #073b3d;
+    font-family: Josefin Sans, sans-serif;
+    color: #5b0dd8;
 }
+
+@media screen and (max-width: 500px) {
+ .map iframe {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-items: center;
+ }
+}
+
+
 
 .submited {
     margin: auto;
