@@ -283,9 +283,18 @@
     margin: inherit;
 }
 
-.description h1 {
+.title-description {
+    font-family: Josefin Sans, sans-serif;;
     text-align: center;
-    padding: 5%;
+    padding: 3%;
+    color: #5b0dd8;
+}
+
+.text-description {
+    font-family: Josefin Sans, sans-serif;;
+    text-align: justify;
+    padding: 3%;
+    color: #5b0dd8;
 }
 
 .projectimg {
