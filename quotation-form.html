@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Quotation Form</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="navbar">
@@ -22,66 +23,59 @@
             </div>
         </nav>
     </header>
-    <!--Form here-->
     <div class="box">
         <form action="submited.html" method="get">
-            <fieldset>
-                <legend class="legend"><b>Your contact information</b></legend>
-                <br>
-                <div class="inputbox">
-                    <label for="name">Full name</label>
-                    <input type="text" name="full-name" id="fname" class="fieldinput" required>
-                </div>
-                <br><br>
-                <div class="inputbox">
-                    <label for="name">Email</label>
-                    <input type="email" name="email" id="email" class="fieldinput" required>
-                </div>
-                <br><br>
-                <div class="inputbox">
-                    <label for="name">Phone</label>
-                    <input type="tel" name="Phone" id="Phone" class="fieldinput" required>
-                </div>
-                <br><br>
-                <p>Desired Style:</p>
-                <br>
+            <h1 class="title_quotation"><b>Your contact information</b></h1>
+            <br>
+            <div class="inputbox">
+                <label for="fname">Full name</label>
+                <input type="text" name="full-name" id="fname" class="fieldinput" required>
+            </div>
+            <br><br>
+            <div class="inputbox">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="fieldinput" required>
+            </div>
+            <br><br>
+            <div class="inputbox">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" class="fieldinput" required>
+            </div>
+            <br><br>
+            <h3>Desired Style:</h3>
+            <br>
+            <div>
+                <label for="classic">Classic</label>
+                <input type="radio" id="classic" name="classic" value="classic">
+                <label for="nordic">Nordic</label>
+                <input type="radio" id="nordic" name="nordic" value="nordic">
+                <label for="rustic">Rustic</label>
+                <input type="radio" id="rustic" name="rustic" value="rustic">
+                <label for="modern">Modern</label>
+                <input type="radio" id="modern" name="modern" value="modern">
+            </div>
+            <br><br>
+            <div class="inputbox">
+                <label for="start"><b>I want to start the project on:</b></label>
+                <input type="date" name="start" id="start" class="start" required>
+            </div>
+            <br><br>
+            <div class="inputbox">
                 <div>
-                    <label for="living room">Classic</label>
-                    <input type="radio" id="living" name="living" value="living">
-                    <label for="balcony">Nordic</label>
-                    <input type="radio" id="balcony" name="balcony" value="balcony">
-                    <label for="bedroom">Rustic</label>
-                    <input type="radio" id="bedroom" name="bedroom" value="bedroom">
-                    <label for="kitchen">Modern</label>
-                    <input type="radio" id="kitchen" name="kitchen" value="kitchen">
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" class="fieldinput" required>
                 </div>
                 <br><br>
-                <div class="inputbox">
-                    <label for="name"><b>I want to start the project on:</b></label>
-                    <input type="date" name="start" id="start" class="start" required>
-                </div>
+                <label for="fieldinput">adress</label>
+                <input type="text" name="fieldinput" id="fieldinput" required>
                 <br><br>
-                <div class="inputbox">
-                    <div>
-                        <label for="name">City</label>
-                        <input type="text" name="adress" id="adress" class="fieldinput" required>
-                    </div>
-                    <br><br>
-                    <div>
-                        <label for="name">Adress</label>
-                        <input type="text" name="adress" id="adress" class="fieldinput" required>
-                        <br><br>
-                        <button id="button">
-                        <a class="submit" href="form-submited.html" target="_blank">Submit</a>
-                        </button>
-                    </div>
-                </div>
-                <br><br>
-            </fieldset>
+            </div>
+            <br><br>
         </form>
-    </div> <!-- End Form-->
+    </div>
+    <form action="form-submited.html" method="get">
+        <button class="button-submit">Submit</button></form>
     <footer>
-        <!--add social media links-->
         <ul class="network-links">
             <li><a href="https://facebook.com" target="_blank" rel="noopner" aria-label="visit us on facebook">
                     <i class="fa-brands fa-facebook-square"></i></a></li>
