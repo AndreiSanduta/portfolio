@@ -1,6 +1,6 @@
-![logo](https://user-images.githubusercontent.com/101544012/169142836-203e786d-234d-45e7-8df4-870e5db3470c.png)
+/workspace/portfolio/docs/logo.png
 # **Sanduta design**
-
+![](./logo.png)
 
 ### This project is intended to be the website of an interior design company in Stockholm. The objective of this project 
 ### is to reach all residents of the city and meet the need that exists
@@ -16,11 +16,17 @@
 * ### A main menu that must cointain
 1. #### A logo.
 2. #### A navigation bar.
+    #### On the navigation bar it should be shown the four navigation tabs such as: "Home, Projects, Contact Us, About us"
 3. #### A clean backgroung image.
-4. #### Get in contact button.
+4. #### Ask for a quotation.
+    #### This button should oppen a form where the user is able to type in the personal info. The gol of that is to be contacted by the company with a quotation for the product.
+    * #### the form should have a submit button and all the fileds should be requerd.
+    * #### when the form is submited the user should be able to se a message confirmig that the message was submited.
 5. #### Process development milestones
-6. #### Map and contact details
-7. #### Social midia links
+6. #### Responsive social media links.
+7. #### The Project Tab should contain a gallery with all the final projects that the company did.
+8. #### On The contact us Tab the user should find the company´s information such as: email, phone number, adress and should be displayed a map as wel.
+9. #### On the about us tab the user should be able to read the information and the story behind the company start.
 # 
 # **Future Features** 
 * #### Increase awareness of the webpage visitors (Banners with discounnt and limited offers)
@@ -29,31 +35,28 @@
 #
 # **Typografy and collor scheme**
 ### On this project the Fonts used should be the following ones
-* #### 
-* #### Collor scheme (#000000  #FFFFFF #D9E3DA #A7BEA9)
-#
+* #### font-family: Josefin Sans, sans-serif
+* #### color: #9478c0;
+* #### backround color should be white
 # **How the website should look like:**
 
-![main page 1](https://user-images.githubusercontent.com/101544012/169135817-5871796a-6595-475f-a729-2fe0f31842c8.png)
-## This is the first part of the main page. On this section we should be able to se the main purpose of the website With 
-## all the navigaton possibilities.
-![main page 2](https://user-images.githubusercontent.com/101544012/169135829-bfc0ab87-15e5-495d-b0b2-5d5f42c26f0d.png)
-## On this second part of the page we sgould be able to se the path that the costummer will cros since the first cntact with the company until the 
-## delivery of the project. Olso on this page we should be able to se the Adress, the phone numeber and the email contact. On the last bottom of the page 
-## we have the footer with the social media links that can be clikable.
-![Projects 1](https://user-images.githubusercontent.com/101544012/169135835-e9c3dd2e-1ff7-47d0-ba03-9d0d3c80b44f.png)
-## Projects page will contain the compaie portfolio. It's a section wehere it show's the picture and descripion of already done projects.
-![projects 2](https://user-images.githubusercontent.com/101544012/169135839-e092139b-4b17-4535-98fc-148b150151d6.png)  
-## Continuation of the project page.
-![About us](https://user-images.githubusercontent.com/101544012/169135842-ebd03617-65fb-4981-bcea-11a1bbad1cb5.png)
-## About us it's an informatve page where the costummer can read about the history of the companie and be awere of the compay mision vision and values.
-![Quotation form](https://user-images.githubusercontent.com/101544012/169135844-5015c4d2-dedd-4ee1-8503-4914297fc05a.png)
-## Qoutation form it's a page that will be oppened by cliking on the button guet a quotation on the main page.
-![submition message](https://user-images.githubusercontent.com/101544012/169141227-079145da-388c-45f7-9d9d-def8b1e7860d.png)
-## This page will oppen when an other page when the form will be succesfuly submited by the custumer.
+![Home Page](main-wireframe.png)
+![Home Page lower section](main-wireframe_two.png)
+![About Us](about-us.png)
+![Contact Us](contact-us.png)
+![Quotation form](form.png)
+#
+#
+## Hoe the website looks like after the conclusion
+![](final_main.png)
+![](final_main_twp.png)
+![](final_submit_message.png)
+
 
 ## The wire frame it's just a scketch of the main website. Some pictures, font family and colors may change to give to the website 
 ## a harmonized look and a better design apeal.
-
-
-## https://www.youtube.com/watch?v=iwoIuyRHy88&ab_channel=Skillthrive
+# The technology used on this website should be HTML and CSS
+# Credits: This project was buit with the support of this websites:
+* ##### https://stackoverflow.com/questions
+* ##### https://validator.w3.org/
+* ##### And Resarch on Slaq comunity.
