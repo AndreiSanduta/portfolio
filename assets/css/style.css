@@ -16,7 +16,7 @@
     font-family: Josefin Sans, sans-serif;
     font-weight: 400;
 }
-
+/* Navigation bar*/
 .navbar {
     display: block;
     justify-content: space-between;
@@ -30,13 +30,16 @@
 }
 
 .brand-title img {
-    width: 60%;
+    width: 16%;
 }
 
 .navbar-links ul {
-    margin: 0;
-    padding: 0;
     display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding-right: 3%;
 }
 
 .navbar-links li {
@@ -54,7 +57,6 @@
 .navbar-links li:hover {
     border: none;
     border-bottom: 3px solid #9478c0;
-    border-top: 3px solid #9478c0;
     cursor: pointer;
 }
 
@@ -62,7 +64,9 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen  navigation barresponsive to the small screns*/
+
+@media screen and (max-width: 500px) {
     .navbar {
         display: flex;
         width: 100%;
@@ -80,30 +84,35 @@
     }
 
     .brand-title img {
-        width: 60%;
+        width: 40%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 20%;
     }
 
     .navbar-links li a {
         text-decoration: none;
         color: #532a96;
-        padding: 1.1rem;
+        padding: 10px;
         display: block;
         font-size: 100%;
+    }
+
+    .navbar-links ul {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 3%;
     }
 }
 
 .wellcome {
     font-family: Josefin Sans, sans-serif;
     font-size: 400%;
-    color: #AA8EBE;
+    color: #5b0dd8;
     position: relative;
     justify-content: center;
     text-align: center;
-    padding: 1%
+    padding: 3%
 }
 
 .main-image {
@@ -111,6 +120,8 @@
     height: 10%;
     overflow: hidden;
 }
+
+/* @media screen  main image and welcome text barresponsive to the small screns*/
 
 @media screen and (max-width: 500px) {
     .wellcome {
@@ -136,6 +147,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 10%;
 }
 
 .btn {
@@ -176,10 +188,13 @@
     transform: translate(-12px, -5%);
 }
 
+/* @media screen  to quotation button to the small screns*/
+
 @media screen and (max-width: 500px) {
     .container .btn {
         width: 300px;
         height: 100px;
+        padding: 7%;
     }
 
     .qtform {
@@ -191,11 +206,13 @@
 }
 
 .path-title h1 {
-    align-items: center;
-    text-align: center;
-    font-size: 500%;
     font-family: Josefin Sans, sans-serif;
-    color: #AA8EBE;
+    font-size: 400%;
+    color: #5b0dd8;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding: 3%
 }
 
 .path-image {
@@ -213,12 +230,14 @@
 
 }
 
+/* @media screen  to the path section to the small screns*/
+
 @media screen and (max-width: 500px) {
     .path-title h1 {
         font-size: 300%;
         text-align: center;
         justify-content: center;
-        color: #AA8EBE;
+        color: #5b0dd8;
     }
 
     .path-image img {
@@ -236,6 +255,9 @@
     display: flex;
     width: 90%;
     padding: 1%;
+    justify-content: center;
+    font-family: Josefin Sans, sans-serif;
+    color: #5b0dd8
 }
 
 .title_quotation {
@@ -243,6 +265,7 @@
     padding: 5%;
     text-align: center;
     font-family: Josefin Sans, sans-serif;
+    color: #5b0dd8
 }
 
 .inputbox {
@@ -263,7 +286,7 @@
     padding: 2%;
     font-size: 100%;
     cursor: pointer;
-    border-radius: 15%;
+    border-radius: 15px;
 }
 
 .button-submit:hover {
@@ -284,7 +307,7 @@
 }
 
 .title-description {
-    font-family: Josefin Sans, sans-serif;;
+    font-family: Josefin Sans, sans-serif;
     text-align: center;
     padding: 3%;
     color: #5b0dd8;
@@ -299,10 +322,10 @@
 
 .projectimg {
     font-family: Josefin Sans, sans-serif;
-    font-size: 400%;
-    color: #AA8EBE;
+    color: #5b0dd8;
     position: relative;
     justify-content: center;
+    text-align: center;
     padding: 3%
 }
 
@@ -351,12 +374,14 @@
     color: #5b0dd8;
 }
 
+/* @media screen  to map to the small screns*/
+
 @media screen and (max-width: 500px) {
  .map iframe {
-  display: flex;
-  width: 100%;
-  height: 50%;
-  justify-items: center;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-items: center;
  }
 }
 
@@ -382,6 +407,7 @@ footer {
 
 .network-links {
     text-align: center;
+    padding-top: 15%;
 }
 
 .network-links>li {
@@ -399,6 +425,8 @@ footer {
     transition: .8s;
     opacity: .3;
 }
+
+/* @media screen  to body barresponsive to the small screns*/
 
 @media screen and (min-width: 320px) {
 
