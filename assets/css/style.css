@@ -192,9 +192,14 @@
 
 @media screen and (max-width: 500px) {
     .container .btn {
+        display: flex;
         width: 300px;
         height: 100px;
         padding: 7%;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .qtform {
